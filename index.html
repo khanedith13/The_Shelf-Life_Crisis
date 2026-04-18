@@ -3,13 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>Ingredients Inventory System</title>
+    <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
+    <section class="header">
+        <div class="title">
+            <img src="images/logo.png" alt="logo" srcset="" class="logo">
+            <h1>📋Shelf Life Tracker</h1>
+            <p>Never waste ingredients again!</p>
+        </div>
+        <div class="counter">
+            <div class="critical">
+                <p>0</p>
+                <p>CRITICAL</p>
+            </div>
+            <div class="warning">
+                <p>0</p>
+                <p>WARNING</p>
+            </div>
+            <div class="safe">
+                <p>0</p>
+                <p>SAFE</p>
+            </div>
+            <div class="total">
+                <p>0</p>
+                <p>TOTAL</p>
+            </div>
+        </div>
+    </section>
 
+    <section class="alerts">
+        <div class="critical-alert"></div>
+        <div class="warning-alert"></div>
+    </section>
+
+    <section class="ingredients">
+        <form class="add-ing">
+            <div class="ing-details">
+                <label>Ingredient Name</label>
+                <input type="text" placeholder="Sourdough, Flour, Butter..." required>
+            </div>
+            <div class="ing-details">
+                <label>Expires On</label>
+                <div class="date-input">
+                    <input type="date" required>
+                    <input type="number" placeholder="Qty (e.g., 2kg)">
+                </div>
+            </div>
+            <button type="submit" class="btn">➕ Add Ingredient</button>
+        </form>
+    </section>
+
+    <section>
+        <div class="inventory"></div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
