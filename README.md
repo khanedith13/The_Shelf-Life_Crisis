@@ -40,10 +40,11 @@
     The_Shelf-Life_Crisis/
     >assets
     >documentation
-    │── index.html
-    │── styles.css
-    │── script.js
+    │── LICENSE
     │── README.md
+    │── index.html
+    │── script.js
+    │── styles.css
 
 ▶️ How to Run
 
