@@ -1,16 +1,19 @@
 # The_Shelf-Life_Crisis
 
 📌 Project Description
+
     Inventory and Expiry Alert System is a student project built with HTML CSS, and JavaScript. 
     It helps users track items and expiration dates using color-coded alerts, an at-risk counter, 
     and local storage, making inventory management simple and efficient.
 
 🚀 Features
+
     📅 Add items with expiration date.
-    🔴🟡🟢 Color-coded alerts:
-    Red → Expires within 48 hours
-    Yellow → Expires within 7 days
-    Green → Safe
+    Color-coded alerts:
+    🔴Red → Expires within 48 hours
+    🟡Yellow → Expires within 7 days
+    🟢Green → Safe
+    
     ⚠️ At-risk items counter
     ✅ Mark items as used (removes from list)
     💾 Data saved using Local Storage
