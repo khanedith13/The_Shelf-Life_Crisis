@@ -11,9 +11,9 @@
     📅 Add items with expiration date.
 
     Color-coded alerts:
-    🔴Red → Expires within 48 hours
-    🟡Yellow → Expires within 7 days
-    🟢Green → Safe
+        🔴Red → Expires within 48 hours
+        🟡Yellow → Expires within 7 days
+        🟢Green → Safe
 
     ⚠️ At-risk items counter
     ✅ Mark items as used (removes from list)
@@ -21,8 +21,8 @@
 
 🎨 User-Friendly UI
 
-    Clean and intuitive design
-    Easy to understand and navigate
+    Clean and intuitive design.
+    Easy to understand and navigate.
 
 
 📱 Responsive Design
@@ -35,15 +35,9 @@
         Mobile 📲
 
 
-🛠️ Technologies Used
-
-    HTML
-    CSS
-    JavaScript
-
 📂 Project Structure
 
-    The_Shelf-Life_Crici/
+    The_Shelf-Life_Crisis/
     │── index.html
     │── styles.css
     │── script.js
@@ -72,10 +66,10 @@
 
 💡 Future Improvements
 
-    🔔 Notification alerts for expiring items
-    🔍 Search and filter feature
-    📊 Analytics dashboard
-    📱 Convert to Progressive Web App
+    🔔 Notification alerts for expiring items.
+    🔍 Search and filter feature.
+    📊 Analytics dashboard.
+    📱 Convert to Progressive Application.
 
 
 Clone the Repository:
@@ -85,11 +79,11 @@ Clone the Repository:
 
 🛠️ Built With
 
-    HTML with Bootstrap Framework, CSS, JavaScript
+    HTML, CSS, JavaScript
 
 
 👨‍💻 Author
 
     Developed by Delfin G. Octobre / Khan Edith | CodeX
-
-GitHub Profile: https://github.com/khanedith13
+    
+    GitHub Profile: https://github.com/khanedith13
