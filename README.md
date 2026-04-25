@@ -38,6 +38,8 @@
 📂 Project Structure
 
     The_Shelf-Life_Crisis/
+    >assets
+    >documentation
     │── index.html
     │── styles.css
     │── script.js
@@ -85,5 +87,5 @@ Clone the Repository:
 👨‍💻 Author
 
     Developed by Delfin G. Octobre / Khan Edith | CodeX
-    
+
     GitHub Profile: https://github.com/khanedith13
