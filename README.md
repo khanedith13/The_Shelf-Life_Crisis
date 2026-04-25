@@ -37,38 +37,41 @@
 
 🛠️ Technologies Used
 
-HTML
-CSS
-JavaScript
+    HTML
+    CSS
+    JavaScript
 
 📂 Project Structure
-The_Shelf-Life_Crici/
-│── index.html
-│── styles.css
-│── script.js
-│── README.md
+
+    The_Shelf-Life_Crici/
+    │── index.html
+    │── styles.css
+    │── script.js
+    │── README.md
 
 ▶️ How to Run
-Download or clone the repository
-Make sure all files are in one folder
-Open index.html in your browser
 
-No installation required.
+    Download or clone the repository.
+    Make sure all files are in one folder.
+    Open index.html in your browser.
+    No installation required.
 
 ⚙️ How It Works
-User inputs item name and expiration date
-JavaScript calculates time difference
-System assigns status (red, yellow, green)
-Items are displayed dynamically in the dashboard
-Data is saved in localStorage for persistence.
+
+    User inputs item name and expiration date.
+    JavaScript calculates time difference.
+    System assigns status (red, yellow, green).
+    Items are displayed dynamically in the dashboard.
+    Data is saved in localStorage for persistence.
 
 🎯 Purpose
 
-    Reduce ingredient waste
-    Improve inventory tracking
-    Provide a quick and easy monitoring system
+    Reduce ingredient waste.
+    Improve inventory tracking.
+    Provide a quick and easy monitoring system.
 
 💡 Future Improvements
+
     🔔 Notification alerts for expiring items
     🔍 Search and filter feature
     📊 Analytics dashboard
