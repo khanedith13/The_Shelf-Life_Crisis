@@ -36,7 +36,7 @@ body {
     padding: 20px 0;
 }
 
-.header {
+.card {
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -50,7 +50,7 @@ body {
     overflow: hidden;
 }
 
-.header::before {
+.card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -60,13 +60,13 @@ body {
     background: linear-gradient(90deg, transparent, var(--glass-border), transparent);
 }
 
-.header:hover {
+.card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
     background: var(--glass-bg-hover);
 }
 
-.header.full-height {
+.card.full-height {
     flex: 1;
 }
 
