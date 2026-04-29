@@ -10,7 +10,7 @@
 <body>
 
     <div class="container">
-        <div class="header">
+        <div class="cards">
             <div class="title">
                 <img src="assets/logo.png" alt="logo">
                 <div class="title-text">
@@ -43,17 +43,17 @@
             <div class="warning-alert"></div>
         </div>
     
-        <div class="ingredients">
-            <form class="add-ing">
-                <div class="ing-details">
+        <div class="glass-card">
+            <form id="addForm">
+                <div class="form-group">
                     <label>Ingredient Name</label>
-                    <input type="text" placeholder="Sourdough, Flour, Butter..." required>
+                    <input type="text" class="input-field" id="ingredientName" placeholder="Sourdough starter, Flour..." required>
                 </div>
-                <div class="ing-details">
-                    <label>Expires On</label>
+                <div class="form-group">
+                    <label>Details</label>
                     <div class="date-input">
-                        <input type="date" required>
-                        <input type="number" placeholder="Qty (e.g., 2kg)">
+                        <input type="date" class="input-field" id="expirationDate" required>
+                        <input type="text" class="input-field" id="quantity" placeholder="2kg, 500g...">
                     </div>
                 </div>
                 <button type="submit" class="btn">➕ Add Ingredient</button>
@@ -64,7 +64,7 @@
             <div class="inventory"></div>
         </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
