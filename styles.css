@@ -45,15 +45,15 @@ body {
     flex: 1;
 }
 
+.title {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
 .title img {
     height: fit-content;
     width: 25%;
     border-radius: 20px;
-}
-
-.title {
-    text-align: center;
-    margin-bottom: 8px;
 }
 
 .title h1 {
@@ -67,11 +67,6 @@ body {
     letter-spacing: -0.02em;
 }
 
-.title p {
-    color: var(--text-secondary);
-    font-size: 1.1rem;
-    font-weight: 400;
-}
 
 .stats {
     display: grid;
