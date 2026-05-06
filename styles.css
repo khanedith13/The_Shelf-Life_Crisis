@@ -288,3 +288,22 @@ body {
     border-color: rgba(255, 107, 107, 0.5);
     transform: scale(1.05);
 }
+
+.inventory-list {
+    margin-top: 16px;
+}
+
+.inventory-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    margin-bottom: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
