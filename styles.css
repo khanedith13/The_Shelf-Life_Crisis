@@ -50,6 +50,11 @@ body {
     overflow: hidden;
 }
 
+.glass-card h3{
+    color: var(--text-primary); 
+    margin-bottom: 24px;
+}
+
 .card::before {
     content: '';
     position: absolute;
