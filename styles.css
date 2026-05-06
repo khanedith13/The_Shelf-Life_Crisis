@@ -364,3 +364,15 @@ body {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
 }
+
+.days-critical {
+    color: var(--accent-critical);
+}
+
+.days-warning {
+    color: var(--accent-warning);
+}
+
+.days-safe {
+    color: var(--accent-safe);
+}
