@@ -61,6 +61,41 @@
     Items are displayed dynamically in the dashboard.
     Data is saved in localStorage for persistence.
 
+🔄 App Flow
+
+    User opens the app
+          ↓
+    Existing data is loaded from LocalStorage
+          ↓
+    Dashboard displays:
+    - Inventory list
+    - Status (Critical, Warning, Safe)
+    - Statistics counter
+          ↓
+    User adds a new ingredient
+          ↓
+    System validates input (name + future date)
+          ↓
+    Item is saved to inventory
+          ↓
+    Data is stored in LocalStorage
+          ↓
+    System calculates expiry status
+          ↓
+    Items are sorted and grouped:
+    [Critical → Warning → Safe]
+          ↓
+    UI updates automatically:
+    - Inventory list refreshes
+    - Stats update
+    - Warning banner shows (if critical items exist)
+          ↓
+    User marks item as "Used"
+          ↓
+    Item is removed from inventory
+          ↓
+    UI updates again
+
 🎯 Purpose
 
     Reduce ingredient waste.
