@@ -13,6 +13,11 @@ class ShelfLifeTracker {
         this.render();
     }
 
-
+    bindEvents() {
+        document.getElementById('addForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            this.addIngredient();
+        });
+    }
     
 }
