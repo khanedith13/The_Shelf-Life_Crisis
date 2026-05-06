@@ -376,3 +376,16 @@ body {
 .days-safe {
     color: var(--accent-safe);
 }
+
+.empty-state {
+    text-align: center;
+    padding: 60px 40px;
+    color: var(--text-secondary);
+}
+
+.empty-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 24px;
+    opacity: 0.6;
+}
