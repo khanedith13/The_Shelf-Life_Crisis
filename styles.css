@@ -276,3 +276,15 @@ body {
 .btn:active {
     transform: translateY(0);
 }
+
+.btn-danger {
+    background: rgba(255, 107, 107, 0.2);
+    border-color: rgba(255, 107, 107, 0.4);
+    color: var(--accent-critical);
+}
+
+.btn-danger:hover {
+    background: rgba(255, 107, 107, 0.3);
+    border-color: rgba(255, 107, 107, 0.5);
+    transform: scale(1.05);
+}
