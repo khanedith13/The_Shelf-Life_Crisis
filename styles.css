@@ -50,7 +50,7 @@ body {
     overflow: hidden;
 }
 
-.glass-card h3{
+.card h3{
     color: var(--text-primary); 
     margin-bottom: 24px;
 }
