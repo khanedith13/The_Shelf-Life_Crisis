@@ -7,4 +7,12 @@ class ShelfLifeTracker {
             }));
         this.init();
     }
+    
+    init() {
+        this.bindEvents();
+        this.render();
+    }
+
+
+    
 }
