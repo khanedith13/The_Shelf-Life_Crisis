@@ -29,6 +29,14 @@ class ShelfLifeTracker {
             alert('Please fill in all required fields!');
             return;
         }
+
+        const expires = new Date(dateStr);
+        if (expires <= new Date()) {
+            alert('Expiration date must be in the future!');
+            return;
+        }
+
+        
     }
     
 }
