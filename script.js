@@ -48,5 +48,11 @@ class ShelfLifeTracker {
         this.clearForm();
     }
     
+    markUsed(id) {
+        this.inventory = this.inventory.filter(item => item.id !== id);
+        this.save();
+        this.render();
+    }
+
     
 }
