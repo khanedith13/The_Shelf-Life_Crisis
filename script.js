@@ -125,6 +125,14 @@ class ShelfLifeTracker {
             return;
         }
 
+        const sorted = [...this.inventory].sort((a, b) => a.expires - b.expires);
+
+        const groups = {
+            critical: [],
+            warning: [],
+            safe: []
+        };
+
         
 
     }
