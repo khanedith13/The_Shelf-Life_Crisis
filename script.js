@@ -142,6 +142,36 @@ class ShelfLifeTracker {
             group.sort((a, b) => a.expires - b.expires)
         );
 
+        const renderGroup = (title, items) => {
+            if (items.length === 0) return '';
+
+            return `
+                <h4 style="margin: 20px 0 10px; color: var(--text-secondary);">
+                    ${title}
+                </h4>
+                ${items.map(item => {
+                const status = this.getStatus(item);
+
+                return `
+                        <div class="inventory-item item-${status.status}">
+                            <div class="item-info">
+                                <div class="item-name">${item.name}</div>
+                                <div class="item-meta">
+                                    ${item.quantity ? `<span>${item.quantity}</span>` : ''}
+                                    <span class="item-days days-${status.status}">
+                                        ${status.days} day${status.days !== 1 ? 's' : ''}
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="btn btn-danger" onclick="tracker.markUsed(${item.id})">
+                                ✓ Used
+                            </button>
+                        </div>
+                    `;
+            }).join('')}
+            `;
+        };
+
         
 
     }
