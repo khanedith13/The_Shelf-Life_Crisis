@@ -138,6 +138,10 @@ class ShelfLifeTracker {
             groups[status].push(item);
         });
 
+        Object.values(groups).forEach(group =>
+            group.sort((a, b) => a.expires - b.expires)
+        );
+
         
 
     }
