@@ -89,6 +89,17 @@ class ShelfLifeTracker {
         document.getElementById('totalCount').textContent = stats.total;
     }
 
-    
+    renderWarning() {
+        const criticalItems = this.inventory.filter(item =>
+            this.getStatus(item).status === 'critical'
+        );
+        
+    }
+
+
+
+
+
+
     
 }
