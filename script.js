@@ -36,6 +36,12 @@ class ShelfLifeTracker {
             return;
         }
 
+        this.inventory.push({
+            id: Date.now(),
+            name: name.charAt(0).toUpperCase() + name.slice(1),
+            expires,
+            quantity
+        });
         
     }
     
