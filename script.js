@@ -57,6 +57,9 @@ class ShelfLifeTracker {
     getStatus(item) {
         const now = new Date();
         const diffTime = item.expires - now;
+        const diffDays = Math.max(0, Math.ceil(diffTime / (1000 * 60 * 60 * 24)));
+
+        
     }
 
     
