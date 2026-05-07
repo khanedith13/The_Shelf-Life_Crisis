@@ -178,9 +178,12 @@ class ShelfLifeTracker {
             renderGroup('✅ Safe Items', groups.safe);
     }
 
+    save() {
+        localStorage.setItem('bakeryInventory', JSON.stringify(this.inventory));
+    }
 
-
-
-
+    clearForm() {
+        document.getElementById('addForm').reset();
+    }
     
 }
