@@ -59,7 +59,9 @@ class ShelfLifeTracker {
         const diffTime = item.expires - now;
         const diffDays = Math.max(0, Math.ceil(diffTime / (1000 * 60 * 60 * 24)));
 
-        
+        if (diffDays <= 2) return { status: 'critical', days: diffDays };
+        if (diffDays <= 7) return { status: 'warning', days: diffDays };
+        return { status: 'safe', days: diffDays };
     }
 
     
