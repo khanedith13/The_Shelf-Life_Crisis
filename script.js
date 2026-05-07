@@ -113,8 +113,19 @@ class ShelfLifeTracker {
 
     renderInventory() {
         const container = document.getElementById('inventoryList');
+        
+        if (this.inventory.length === 0) {
+            container.innerHTML = `
+                <div class="empty-state">
+                    <div class="empty-icon">🥖</div>
+                    <h3>No ingredients yet</h3>
+                    <p>Add your first ingredient to get started!</p>
+                </div>
+            `;
+            return;
+        }
 
-
+        
 
     }
 
