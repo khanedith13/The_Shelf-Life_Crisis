@@ -42,7 +42,11 @@ class ShelfLifeTracker {
             expires,
             quantity
         });
-        
+
+        this.save();
+        this.render();
+        this.clearForm();
     }
+    
     
 }
