@@ -97,9 +97,21 @@ class ShelfLifeTracker {
         const banner = document.getElementById('warningBanner');
         const warningText = document.getElementById('warningText');
 
-        
+        if (criticalItems.length > 0) {
+            warningText.innerHTML = `
+                <strong>🚨 Expiring Soon:</strong><br>
+                ${criticalItems.map(item => {
+                const status = this.getStatus(item);
+                return `• ${item.name} (${status.days}d)`;
+            }).join('<br>')}
+            `;
+            banner.classList.add('show');
+        } else {
+            banner.classList.remove('show');
+        }
     }
 
+    
 
 
 
