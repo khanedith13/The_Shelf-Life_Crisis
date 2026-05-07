@@ -75,7 +75,11 @@ class ShelfLifeTracker {
         return stats;
     }
 
-    
+    render() {  
+        this.renderStats();
+        this.renderWarning();
+        this.renderInventory();
+    }
 
 
     
