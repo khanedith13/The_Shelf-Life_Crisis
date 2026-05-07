@@ -172,8 +172,10 @@ class ShelfLifeTracker {
             `;
         };
 
-        
-
+        container.innerHTML =
+            renderGroup('🚨 Critical Items', groups.critical) +
+            renderGroup('⚠️ Warning Items', groups.warning) +
+            renderGroup('✅ Safe Items', groups.safe);
     }
 
 
