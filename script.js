@@ -64,5 +64,14 @@ class ShelfLifeTracker {
         return { status: 'safe', days: diffDays };
     }
 
+    getStats() {
+        const stats = { critical: 0, warning: 0, safe: 0, total: this.inventory.length };
+
+        
+    }
+
+
+
+
     
 }
