@@ -187,3 +187,4 @@ class ShelfLifeTracker {
     }
     
 }
+const tracker = new ShelfLifeTracker();
