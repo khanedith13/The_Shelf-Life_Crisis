@@ -111,7 +111,12 @@ class ShelfLifeTracker {
         }
     }
 
-    
+    renderInventory() {
+        const container = document.getElementById('inventoryList');
+
+
+
+    }
 
 
 
