@@ -67,10 +67,15 @@ class ShelfLifeTracker {
     getStats() {
         const stats = { critical: 0, warning: 0, safe: 0, total: this.inventory.length };
 
-        
+        this.inventory.forEach(item => {
+            const status = this.getStatus(item).status;
+            stats[status]++;
+        });
+
+        return stats;
     }
 
-
+    
 
 
     
