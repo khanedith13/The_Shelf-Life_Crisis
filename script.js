@@ -133,6 +133,11 @@ class ShelfLifeTracker {
             safe: []
         };
 
+        sorted.forEach(item => {
+            const status = this.getStatus(item).status;
+            groups[status].push(item);
+        });
+
         
 
     }
