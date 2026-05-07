@@ -93,6 +93,10 @@ class ShelfLifeTracker {
         const criticalItems = this.inventory.filter(item =>
             this.getStatus(item).status === 'critical'
         );
+
+        const banner = document.getElementById('warningBanner');
+        const warningText = document.getElementById('warningText');
+
         
     }
 
