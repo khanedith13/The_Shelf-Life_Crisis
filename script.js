@@ -54,5 +54,10 @@ class ShelfLifeTracker {
         this.render();
     }
 
+    getStatus(item) {
+        const now = new Date();
+        const diffTime = item.expires - now;
+    }
+
     
 }
