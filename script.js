@@ -81,6 +81,14 @@ class ShelfLifeTracker {
         this.renderInventory();
     }
 
+    renderStats() {
+        const stats = this.getStats();
+        document.getElementById('criticalCount').textContent = stats.critical;
+        document.getElementById('warningCount').textContent = stats.warning;
+        document.getElementById('safeCount').textContent = stats.safe;
+        document.getElementById('totalCount').textContent = stats.total;
+    }
 
+    
     
 }
