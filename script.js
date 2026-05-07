@@ -19,5 +19,11 @@ class ShelfLifeTracker {
             this.addIngredient();
         });
     }
+
+    addIngredient() {
+        const name = document.getElementById('ingredientName').value.trim();
+        const dateStr = document.getElementById('expirationDate').value;
+        const quantity = document.getElementById('quantity').value.trim();
+    }
     
 }
