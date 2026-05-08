@@ -34,6 +34,19 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px 0;
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .card {
@@ -118,7 +131,7 @@ body {
     text-align: center;
     padding: 24px 16px;
     background: var(--glass-bg);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
     border: 1px solid var(--glass-border);
     border-radius: 20px;
     transition: all 0.3s ease;
@@ -176,6 +189,20 @@ body {
     display: none;
     animation: pulse 2s infinite;
     box-shadow: 0 8px 32px rgba(255, 107, 107, 0.2);
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.critical-banner {
+    background: rgba(255, 107, 107, 0.2);
+    border: 1px solid rgba(255, 107, 107, 0.4);
+    color: var(--accent-critical);
+}
+
+.safe-banner {
+    background: rgba(81, 207, 102, 0.15);
+    border: 1px solid rgba(81, 207, 102, 0.35);
+    color: var(--accent-safe);
 }
 
 .warning-banner.show {
@@ -210,7 +237,7 @@ body {
     width: 100%;
     padding: 20px 24px;
     background: var(--glass-bg);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
     border: 1px solid var(--glass-border);
     border-radius: 16px;
     color: var(--text-primary);
@@ -228,6 +255,10 @@ body {
     border-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
     background: var(--glass-bg-hover);
+}
+
+input[type="datetime-local"] {
+    color-scheme: dark;
 }
 
 .date-input {
@@ -299,7 +330,7 @@ body {
     align-items: center;
     padding: 24px;
     background: var(--glass-bg);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
     border: 1px solid var(--glass-border);
     border-radius: 20px;
     margin-bottom: 16px;
@@ -319,7 +350,7 @@ body {
 }
 
 .inventory-item:hover {
-    transform: translateX(8px) translateY(-4px);
+    transform: translateY(-4px);
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
     border-color: rgba(255, 255, 255, 0.3);
 }
@@ -395,7 +426,7 @@ body {
         padding: 16px;
     }
 
-    .glass-card {
+    .card {
         padding: 24px;
         margin-bottom: 16px;
     }

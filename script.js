@@ -90,25 +90,28 @@ class ShelfLifeTracker {
     }
 
     renderWarning() {
-        const criticalItems = this.inventory.filter(item =>
-            this.getStatus(item).status === 'critical'
-        );
-
+        const criticalItems = this.inventory.filter(item => this.getStatus(item).status === 'critical');
         const banner = document.getElementById('warningBanner');
         const warningText = document.getElementById('warningText');
+
+        banner.classList.remove('safe-banner', 'critical-banner');
 
         if (criticalItems.length > 0) {
             warningText.innerHTML = `
                 <strong>🚨 Expiring Soon:</strong><br>
                 ${criticalItems.map(item => {
-                const status = this.getStatus(item);
-                return `• ${item.name} (${status.days}d)`;
-            }).join('<br>')}
+                    const status = this.getStatus(item);
+                    return `• ${item.name} (${status.days}d)`;
+                }).join('<br>')}
             `;
-            banner.classList.add('show');
+            banner.classList.add('critical-banner');
         } else {
-            banner.classList.remove('show');
+            warningText.innerHTML = `
+                <strong>✅ No Critical Ingredients</strong>
+            `;
+            banner.classList.add('safe-banner');
         }
+        banner.classList.add('show');
     }
 
     renderInventory() {
