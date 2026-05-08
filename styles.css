@@ -193,6 +193,18 @@ body {
     overflow-y: auto;
 }
 
+.critical-banner {
+    background: rgba(255, 107, 107, 0.2);
+    border: 1px solid rgba(255, 107, 107, 0.4);
+    color: var(--accent-critical);
+}
+
+.safe-banner {
+    background: rgba(81, 207, 102, 0.15);
+    border: 1px solid rgba(81, 207, 102, 0.35);
+    color: var(--accent-safe);
+}
+
 .warning-banner.show {
     display: block;
 }
