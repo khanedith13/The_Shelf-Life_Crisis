@@ -232,6 +232,10 @@ body {
     background: var(--glass-bg-hover);
 }
 
+input[type="datetime-local"] {
+    color-scheme: dark;
+}
+
 .date-input {
     display: grid;
     grid-template-columns: 2fr 1fr;
