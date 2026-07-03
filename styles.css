@@ -4,14 +4,11 @@
     --glass-border: rgba(255, 255, 255, 0.2);
     --glass-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
     --glass-backdrop: rgba(255, 255, 255, 0.9);
-
     --text-primary: #ffffff;
     --text-secondary: rgba(255, 255, 255, 0.8);
-
     --accent-critical: #ff6b6b;
     --accent-warning: #feca57;
     --accent-safe: #51cf66;
-
     --gradient-bg: linear-gradient(
         135deg,
         #667eea 0%,
