@@ -456,3 +456,13 @@ input[type="datetime-local"] {
         grid-template-columns: 1fr;
     }
 }
+
+.quantity-group{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:16px;
+}
+
+select.input-field{
+    cursor:pointer;
+}
