@@ -122,6 +122,5 @@ Clone the Repository:
 
 👨‍💻 Author
 
-    Developed by Delfin G. Octobre / Khan Edith | CodeX
+    Developed by Delfin G. Octobre
 
-    GitHub Profile: https://github.com/khanedith13
